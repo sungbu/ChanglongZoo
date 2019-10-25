@@ -1,0 +1,121 @@
+var zooWrap = document.getElementsByClassName('zoo-des-cont')[0];
+var drive = zooWrap.getElementsByClassName('drive')[0];
+var walking = zooWrap.getElementsByClassName('walking')[0];
+var arr1 = [
+    {
+    imgSrc:'img/content-700.png',
+    title:'澳洲森林',
+    des:'在充满澳洲特色的桉树林里，居住着珍稀单孔类动物——大赤袋鼠；第二大鸟类—....'
+    },
+    {
+    imgSrc:'img/content-1086.png',
+    title:'美洲丛林',
+    des:'穿过带着美洲自由奔放特色的印第安大门，迎接我们的是美洲大地上至大的鸟类—....'
+    },
+    {
+    imgSrc:'img/content-1356.png',
+    title:'中亚荒漠',
+    des:'从美洲丛里出来，在曲折的道路上面转弯便来到我们一望无际的中亚荒漠。这里可....'
+    },
+    {
+    imgSrc:'img/content-1626.png',
+    title:'南亚雨林',
+    des:'在中亚荒漠的尽头，有一片茂密的阔叶林。穿梭在茂盛的雨林之中，转弯我们就进....'
+    },
+    {
+    imgSrc:'img/content-1896.png',
+    title:'欧洲山地',
+    des:'从茂密的雨林里出来，便来到我们的山路盘旋的第五站。在蜿蜒曲折的山路上面，....'
+    },
+    {
+    imgSrc:'img/content-2166.png',
+    title:'狂野地带',
+    des:'经过庞大的雕刻着"狂野地带"的巨石，憨厚可爱的黑熊与棕熊正摆着各种可爱P....'
+    },
+    {
+    imgSrc:'img/content-2436.png',
+    title:'南非高原',
+    des:'带着放松的心情，乘风去感受第七站的南非高原的独特风貌。高原天池里或边上，....'
+    },
+    {
+    imgSrc:'img/content-2706.png',
+    title:'东非草原',
+    des:'穿越蜿蜒的高原大道，有着独一无二条纹斑马将带给你最后一站的独特见面礼。公....'
+    }
+    
+]
+var arr2 = [
+    {
+        imgSrc:'img/content-2981.png',
+        title:'空中缆车',
+        des:'这是在步行观赏、自驾车观赏体，长隆打破打传统观赏动物模式，为游客带来全新....'
+    },
+    {
+        imgSrc:'img/content-3519.png',
+        title:'考拉园',
+        des:'这里是环境优雅的考拉展区”，长隆野生动物世界考拉的“娘家人”——澳大利....'
+    },
+    {
+        imgSrc:'img/content-3786.png',
+        title:'大象园',
+        des:'在中华区的大象园是集展示、互动于一体的充满自然生态的展区。流水潺潺，绿树....'
+    },
+    {
+        imgSrc:'img/content-4053.png',
+        title:'百虎山',
+        des:'谁说一山不容二虎？华南虎、金虎、银虎、白虎、孟加拉虎、东北虎在这里齐聚一....'
+    },
+    {
+        imgSrc:'img/content-4324.png',
+        title:'长颈鹿广场',
+        des:'长颈鹿广场生活着长颈鹿，他们拥有长长的睫毛，水灵灵的大眼睛以及细长的脖子....'
+    },
+    {
+        imgSrc:'img/content-4595.png',
+        title:'儿童天地',
+        des:'在动物园里有一个精致的“园中园”，那就是根据动物造型全新打造的“儿童天地....'
+    },
+    {
+        imgSrc:'img/content-4865.png',
+        title:'非洲长廊',
+        des:'在一望无际的大草原上，成群的角马和斑马在移动，猴面包树下躺着几只懒散的狮....'
+    },
+    {
+        imgSrc:'img/content-5135.png',
+        title:'金猴王国',
+        des:'金猴王国是长隆野生动物世界于猴年春节前推出的全新游览区域。金猴王国经过知....'
+    },
+    {
+        imgSrc:'img/content-5407.png',
+        title:'侏罗纪森林',
+        des:'在占地数十万平方米的侏罗纪森林，来自未来的机器人带你穿越时空隧道，绝美的....'
+    },
+    {
+        imgSrc:'img/content-5678.png',
+        title:'金蛇秘境',
+        des:'青龙山上的“金蛇秘境”开园了，知名的20多个蛇精英种族，全都聚会于此，济....'
+    },
+    {
+        imgSrc:'img/content-5948.png',
+        title:'非洲森林',
+        des:'“非洲森林”展区占地超过3万平方米，整体设计高度还原非洲森林的景观，30....'
+    },
+    {
+        imgSrc:'img/content-6218.png',
+        title:'丛林发现',
+        des:'爱动物，就从森林探索开始！在“丛林发现”科普展区，收藏着许多关于自然与动....'
+    },
+    {
+        imgSrc:'img/content-6488.png',
+        title:'雨林仙踪',
+        des:'大型动物互动立体生态雨林展区"雨林仙踪"，创新立体分层展示方式刷新以往的....'
+    },
+        
+]
+movePlay(drive)();
+movePlay(walking)();
+assistant(walking,arr2);
+assistant(drive,arr1);
+document.oncontextmenu = function () {
+    return false
+}
